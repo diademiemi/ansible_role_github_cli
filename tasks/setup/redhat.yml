@@ -9,7 +9,7 @@
     gpgkey: https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x23F3D4EA75716059
     enabled: true
     state: present
-  
+
 - name: Install GitHub CLI
   become: true
   ansible.builtin.yum:
