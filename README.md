@@ -1,6 +1,8 @@
 Ansible Role Template
 =========
 
+[![Molecule Test](https://github.com/diademiemi/ansible_role_github_cli/actions/workflows/molecule.yml/badge.svg)](https://github.com/diademiemi/ansible_role_github_cli/actions/workflows/molecule.yml)
+
 This is an Ansible role to install and configure github_cli.
 
 This role uses the GitHub CLI mirrors to install the packages on supported platforms, it does need any variables to be set.
