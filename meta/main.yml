@@ -1,7 +1,7 @@
 galaxy_info:
   author: diademiemi
   namespace: diademiemi
-  description: Ansible role to install and configure template
+  description: Ansible role to install and configure github_cli
   company: diademiemi
 
   # If the issue tracker for your role is not on github, uncomment the

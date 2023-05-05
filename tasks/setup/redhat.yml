@@ -1,0 +1,20 @@
+---
+- name: Add GitHub CLI Yum repo
+  become: true
+  ansible.builtin.yum_repository:
+    name: gh-cli
+    description: packages for the GitHub CLI
+    baseurl: https://cli.github.com/packages/rpm
+    gpgcheck: true
+    gpgkey: https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x23F3D4EA75716059
+    enabled: true
+    state: present
+  
+- name: Install GitHub CLI
+  become: true
+  ansible.builtin.yum:
+    name: gh
+    state: present
+    update_cache: true
+
+...
