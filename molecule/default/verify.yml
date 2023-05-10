@@ -6,5 +6,8 @@
   gather_facts: false
   tasks:
     - name: Example assertion
-      ansible.builtin.assert:
-        that: true
+      ansible.builtin.command: "gh --version"
+      register: gh_version
+      changed_when: false
+
+...
