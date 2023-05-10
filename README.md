@@ -1,4 +1,4 @@
-Ansible Role Template
+Ansible Role GitHub CLI
 =========
 
 [![Molecule Test](https://github.com/diademiemi/ansible_role_github_cli/actions/workflows/molecule.yml/badge.svg)](https://github.com/diademiemi/ansible_role_github_cli/actions/workflows/molecule.yml)
