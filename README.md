@@ -42,10 +42,12 @@ Example Playbook
 ----------------
 
 ```yaml
-- name: Use github_cli role
+- name: Use diademiemi.github_cli role
   hosts: "{{ target | default('github_cli') }}"
   roles:
-    - diademiemi.github_cli
+    - role: "diademiemi.github_cli"
+      tags: ['diademiemi', 'github_cli', 'setup']
+
 ```
 
 License
