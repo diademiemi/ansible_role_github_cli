@@ -1,0 +1,17 @@
+---
+- name: Add GitHub CLI Yum repo
+  become: true
+  community.general.zypper_repository:
+    repo: https://cli.github.com/packages/rpm/gh-cli.repo
+    state: present
+    disable_gpg_check: true  # auto_import_keys is bugged
+    runrefresh: true
+
+- name: Install GitHub CLI
+  become: true
+  community.general.zypper:
+    name: gh
+    state: present
+    update_cache: true
+
+...
